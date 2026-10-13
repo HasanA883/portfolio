@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Résumé · Hasan Al-Thawr</title>
+<meta name="description" content="Résumé of Hasan Al-Thawr, business and systems analyst. Experience at Innovistic, District 3 and VersaCold; BComm in Business Technology Management, Concordia University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap">
+<style>
+/* Same look as the homepage on screen; a clean black-on-white one-page layout when printed or saved as PDF. */
+:root{
+  color-scheme:dark;
+  --black:#000000; --navy:#181823; --fg:#ffffff; --grey:#8491a0; --dim:#5b6876;
+  --accent:#5221e6; --accent-hi:#7a54ff; --line:#2a2a38;
+  --font:"Sen", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--black);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.6}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent-hi);outline-offset:3px}
+p,ul,h1,h2,h3{margin:0}
+
+header{position:sticky;top:0;z-index:20;background:var(--navy);display:flex;align-items:stretch;justify-content:space-between;height:72px}
+.logo{background:var(--black);display:flex;align-items:center;padding-inline:clamp(16px,4vw,40px);font-weight:800;font-size:1.2rem;text-decoration:none}
+.logo span{color:var(--accent-hi)}
+.top-actions{display:flex;align-items:stretch}
+.top-actions a,.top-actions button{display:flex;align-items:center;padding-inline:22px;text-decoration:none;color:rgba(255,255,255,.7);font:inherit;font-size:1rem;background:none;border:0;cursor:pointer}
+.top-actions a:hover{color:#fff}
+.top-actions .cta{background:var(--accent);color:#fff;font-weight:700;padding-inline:28px}
+.top-actions .cta:hover{background:var(--accent-hi)}
+@media (max-width:560px){.top-actions .back{display:none}}
+
+main{max-width:900px;margin:0 auto;padding-inline:clamp(16px,4vw,40px);padding-block:clamp(48px,8vw,96px)}
+.head{display:flex;flex-direction:column;gap:14px;padding-bottom:36px;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(2.4rem,6vw,3.8rem);line-height:1.05;font-weight:700;letter-spacing:-.01em}
+.contact{display:flex;flex-wrap:wrap;gap:6px 22px;color:var(--grey);font-size:.98rem}
+.contact a{text-decoration:none;border-bottom:1px solid #33334a}
+.contact a:hover{color:#fff;border-color:var(--accent-hi)}
+.langs{color:var(--dim);font-size:.92rem}
+
+section{padding-block:36px;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-hi);margin-bottom:22px}
+.entry{display:flex;flex-direction:column;gap:8px}
+.entry + .entry{margin-top:30px}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:6px 20px;flex-wrap:wrap}
+h3{font-size:1.18rem;font-weight:700;line-height:1.35}
+h3 .org{color:var(--grey);font-weight:400}
+.meta{font-size:.85rem;color:var(--dim);white-space:nowrap;font-variant-numeric:tabular-nums}
+.sub{color:var(--grey);font-size:.95rem}
+ul.bullets{padding-left:18px;display:grid;gap:6px;color:#c9d0da}
+ul.bullets li::marker{color:var(--accent-hi)}
+strong{color:#fff;font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:.82rem;border:1px solid #33334a;padding:5px 12px;color:#d6dbe3}
+.plain{color:#c9d0da}
+
+footer{background:var(--navy);padding:32px clamp(16px,4vw,40px);color:var(--grey);font-size:.9rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+
+/* Print / Save as PDF */
+@page{size:letter;margin:0.34in 0.5in}
+@media print{
+  :root{color-scheme:light}
+  body{background:#fff;color:#111;font-size:8.9pt;line-height:1.22}
+  header,footer,.no-print{display:none!important}
+  main{max-width:none;padding:0}
+  .head{gap:2pt;padding-bottom:6pt;border-bottom:1.2pt solid #111}
+  h1{font-size:17pt;color:#111}
+  .contact{color:#333;font-size:9pt;gap:0 12pt}
+  .contact a{border:0;color:#333}
+  .langs{color:#444;font-size:8.8pt}
+  section{padding-block:5pt;border-bottom:0.6pt solid #bbb;break-inside:auto}
+  h2{color:#111;font-size:9.2pt;margin-bottom:3pt;letter-spacing:.1em}
+  .entry{gap:2pt;break-inside:avoid}
+  .entry + .entry{margin-top:5pt}
+  h3{font-size:9.8pt;color:#111}
+  .row{flex-wrap:nowrap}
+  h3 .org{color:#333}
+  .meta,.sub{color:#444;font-size:8.8pt}
+  ul.bullets{gap:0.5pt;color:#111;padding-left:13pt}
+  ul.bullets li::marker{color:#111}
+  strong{color:#111}
+  .chips{display:block}
+  .chips span{border:0;padding:0;color:#111;font-size:9.4pt}
+  .chips span:not(:last-child)::after{content:" · "}
+  .plain{color:#111}
+  a{text-decoration:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="logo">Hasan Al-Thawr<span>.</span></a>
+  <div class="top-actions">
+    <a href="/" class="back">← Back to portfolio</a>
+    <button type="button" class="cta" id="pdfBtn">Download PDF</button>
+  </div>
+</header>
+
+<main>
+  <div class="head">
+    <h1>Hasan Al-Thawr</h1>
+    <div class="contact">
+      <span>Canada</span>
+      <a href="mailto:hasan@al-thawr.com">hasan@al-thawr.com</a>
+      <a href="https://www.linkedin.com/in/hasan-al-thawr/" target="_blank" rel="noopener">linkedin.com/in/hasan-al-thawr</a>
+      <a href="https://hasan.al-thawr.com">hasan.al-thawr.com</a>
+    </div>
+    <p class="langs">English (Native/Fluent) · Arabic (Native/Fluent) · French (B2)</p>
+  </div>
+
+  <section>
+    <h2>Professional experience</h2>
+    <div class="entry">
+      <div class="row">
+        <h3>Innovation Lab Sandbox Consultant (Contract) <span class="org">· District 3 Innovation Centre, Concordia University</span></h3>
+        <span class="meta">Montréal, QC · Sep 2026 – Dec 2026</span>
+      </div>
+      <ul class="bullets">
+        <li>Selected for a cohort working with STOP Cyberviolences / Centres Relier on <strong>Monster Messenger, an AI chatbot</strong> for children and teenagers.</li>
+        <li>Audit chatbot code and design <strong>prompt-injection and crisis-handling test scenarios</strong> to strengthen RAG safety, reliability, and responsible-AI practices.</li>
+        <li>Collaborate with a multidisciplinary team and the organization owner through an iterative design sprint.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row">
+        <h3>Solutions Consultant <span class="org">· Innovistic</span></h3>
+        <span class="meta">Montréal, QC (Remote) · Feb 2026 – Present</span>
+      </div>
+      <ul class="bullets">
+        <li><strong>Elicit and translate stakeholder requirements into system scope</strong>, aligning implementation plans with client business objectives.</li>
+        <li>Reframed <strong>six UI/UX design pillars around measurable outcomes</strong> (conversion, support-ticket reduction, and adoption speed) to support stakeholder buy-in.</li>
+        <li>Created client-facing training content that <strong>reduced onboarding time by 65%</strong>, accelerating proficiency with new system workflows.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row">
+        <h3>Inventory Management Specialist <span class="org">· VersaCold (acquired by Lineage)</span></h3>
+        <span class="meta">Montréal, QC · May 2021 – Oct 2023</span>
+      </div>
+      <ul class="bullets">
+        <li>Troubleshot a WMS data-entry bottleneck with IT; implemented a custom field that eliminated a manual processing step and <strong>improved efficiency by 20%</strong>.</li>
+        <li>Developed and standardized SOPs for inbound, outbound, and returns operations using Fishbone analysis and 5 Whys, <strong>reducing downstream errors by 60%</strong>.</li>
+        <li>Led data-driven client communications and audits for Nestlé, redesigning packaging and storage placement to <strong>cut related damages by approximately 80%</strong> and protect cold-chain integrity.</li>
+        <li>Managed a structured performance-improvement plan that retained an underperforming employee, <strong>avoiding more than $15,000</strong> in turnover and onboarding costs.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Project experience</h2>
+    <div class="entry">
+      <div class="row">
+        <h3>IT Sourcing &amp; Systems Analyst <span class="org">· Independent Consulting Project</span></h3>
+        <span class="meta">Montréal, QC · Sep 2025 – Present</span>
+      </div>
+      <ul class="bullets">
+        <li>Conducted current-state assessment and future-state systems design for booking and inventory workflows through <strong>seven-plus stakeholder interviews</strong> using UML, DFDs, and CRC cards.</li>
+        <li>Ran a weighted five-year TCO vendor evaluation across five SaaS candidates, delivering an RFP-backed recommendation projecting <strong>approximately 40% time savings</strong>; <strong>selected as class competition winner</strong>.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row">
+        <h3>AI Solutions Analyst <span class="org">· AuChampe.ca</span></h3>
+        <span class="meta">Montréal, QC · Sep 2025 – Present</span>
+      </div>
+      <ul class="bullets">
+        <li>Led design and delivery of a RAG system to generate compliant government reports, <strong>cutting manual report-formatting time by approximately 70%</strong> and eliminating cross-report data inconsistency.</li>
+        <li>Redesigned the consultant-facing UI to support the automated workflow.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row">
+        <h3>B2B Booth Sales Representative <span class="org">· Al-Kbous Group</span></h3>
+        <span class="meta">Montréal, QC · 2025</span>
+      </div>
+      <ul class="bullets">
+        <li>Developed lead-qualification criteria and an engagement strategy for SIAL Montréal 2025, <strong>driving 75% growth in client acquisition</strong> through targeted booth engagement.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="row">
+        <h3>Bachelor of Commerce <span class="org">· Concordia University, John Molson School of Business</span></h3>
+        <span class="meta">Sep 2023 – Dec 2026</span>
+      </div>
+      <p class="sub">Major: Business Technology Management · Minor: Supply Chain Operations Management</p>
+      <ul class="bullets">
+        <li>GPA 3.62 · Dean's List (2024–2025, 2025–2026) · Golden Key International Honour Society (top 15% by GPA)</li>
+        <li><strong>Relevant coursework:</strong> Information Systems Analysis (A+) · Information Systems Design &amp; Implementation (A−) · Business Analytics (A+)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="chips">
+      <span>SQL</span><span>C#</span><span>Python</span><span>Power BI</span><span>Tableau</span><span>SAP</span><span>GitHub</span><span>Figma</span><span>Requirements Elicitation</span><span>UML</span><span>DFD</span><span>BPMN</span><span>Process Analysis</span><span>Agile</span><span>Prompt-Injection Testing</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Leadership &amp; certifications</h2>
+    <div class="entry">
+      <div class="row">
+        <h3>Director of Events <span class="org">· Arab Students Network, Concordia JMSB</span></h3>
+        <span class="meta">May 2026 – Present</span>
+      </div>
+      <ul class="bullets">
+        <li>Implemented Trello to streamline event planning and <strong>reduce committee alignment meetings by 25%</strong>.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <p class="plain"><strong>Certifications:</strong> AWS Academy Generative AI Foundations (2026) · Project+ Exam Prep, PK0-005 (2025)</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>© 2026 Hasan Al-Thawr</span>
+  <a href="/">← Back to portfolio</a>
+</footer>
+
+<script>
+document.getElementById('pdfBtn').addEventListener('click', function(){ window.print(); });
+</script>
+</body>
+</html>
